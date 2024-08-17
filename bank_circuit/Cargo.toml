@@ -1,0 +1,26 @@
+[package]
+name = "bank_circuit"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ark-bn254 = "0.4.0"
+ark-crypto-primitives = { version = "0.4.0", features = ["encryption", "crh", "sponge"] }
+ark-ed-on-bn254 = {version = "^0.4.0", features = [ "r1cs" ]}
+ark-ec = "0.4.2"
+ark-ff = "0.4.2"
+ark-groth16 = "0.4.0"
+ark-r1cs-std = "0.4.0"
+ark-relations = "0.4.0"
+ark-serialize = "0.4.2"
+ark-sponge = "0.3.0"
+ark-std = "0.4.0"
+arkworks-gadgets = "0.4.20"
+arkworks-r1cs-circuits = "1.2.0"
+arkworks-r1cs-gadgets = "1.2.0"
+rand = "0.8.5"
+serde_json = "1.0.125"
+sha2 = "0.10.8"
+sha3 = "0.10.8"
