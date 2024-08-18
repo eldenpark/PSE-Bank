@@ -11,17 +11,18 @@ use ark_relations::r1cs::SynthesisError;
 use crate::gadgets::public_encryptions::{elgamal, constraints::AsymmetricEncryptionGadget};
 
 #[derive(Clone)]
-pub struct Witness<C: CurveGroup>{
-    pub m: Option<elgamal::Plaintext<C>>,
-    pub r: Option<elgamal::Randomness<C>>,
-}
-
-#[derive(Clone)]
 pub struct Instance<C: CurveGroup> {
     pub g : elgamal::Parameters<C>,
     pub pk: Option<elgamal::PublicKey<C>>,
     pub ct: Option<elgamal::Ciphertext<C>>,
 }
+
+#[derive(Clone)]
+pub struct Witness<C: CurveGroup>{
+    pub m: Option<elgamal::Plaintext<C>>,
+    pub r: Option<elgamal::Randomness<C>>,
+}
+
 
 
 #[derive(Clone)]
