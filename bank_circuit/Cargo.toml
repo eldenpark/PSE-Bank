@@ -8,7 +8,7 @@ edition = "2021"
 [dependencies]
 ark-bn254 = "0.4.0"
 ark-crypto-primitives = { version = "0.4.0", features = ["crh", "merkle_tree", "r1cs"] }
-ark-ed-on-bn254 = {version = "^0.4.0", features = [ "r1cs" ]}
+ark-ed-on-bn254 = { version = "^0.4.0", features = [ "r1cs" ] }
 ark-ec = "0.4.2"
 ark-ff = "0.4.2"
 ark-groth16 = "0.4.0"
@@ -25,3 +25,5 @@ serde_json = "1.0.125"
 sha2 = "0.10.8"
 sha3 = "0.10.8"
 
+ark-ed-on-bls12-381 = { version = "0.4.0", features = ["r1cs"] }
+ark-bls12-381 = { version = "0.4.0", features= ["scalar_field"] }

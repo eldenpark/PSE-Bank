@@ -37,6 +37,18 @@ dependencies = [
 ]
 
 [[package]]
+name = "ark-bls12-381"
+version = "0.4.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c775f0d12169cba7aae4caeb547bb6a50781c7449a8aa53793827c9ec4abf488"
+dependencies = [
+ "ark-ec 0.4.2",
+ "ark-ff 0.4.2",
+ "ark-serialize 0.4.2",
+ "ark-std 0.4.0",
+]
+
+[[package]]
 name = "ark-bn254"
 version = "0.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -137,11 +149,24 @@ version = "0.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "43b7ada17db3854f5994e74e60b18e10e818594935ee7e1d329800c117b32970"
 dependencies = [
- "ark-bls12-381",
+ "ark-bls12-381 0.3.0",
  "ark-ec 0.3.0",
  "ark-ff 0.3.0",
  "ark-r1cs-std 0.3.1",
  "ark-std 0.3.0",
+]
+
+[[package]]
+name = "ark-ed-on-bls12-381"
+version = "0.4.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ba6d678bb98a7e4f825bd4e332e93ac4f5a114ce2e3340dee4d7dc1c7ab5b323"
+dependencies = [
+ "ark-bls12-381 0.4.0",
+ "ark-ec 0.4.2",
+ "ark-ff 0.4.2",
+ "ark-r1cs-std 0.4.0",
+ "ark-std 0.4.0",
 ]
 
 [[package]]
@@ -596,11 +621,11 @@ version = "0.4.20"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "807e1d62300dca91c9286c859ce79e916821381b62dac91a140b15a9b4cdd735"
 dependencies = [
- "ark-bls12-381",
+ "ark-bls12-381 0.3.0",
  "ark-bn254 0.3.0",
  "ark-crypto-primitives 0.3.0",
  "ark-ec 0.3.0",
- "ark-ed-on-bls12-381",
+ "ark-ed-on-bls12-381 0.3.0",
  "ark-ed-on-bn254 0.3.0",
  "ark-ff 0.3.0",
  "ark-groth16 0.3.0",
@@ -626,9 +651,11 @@ checksum = "0c4b4d0bd25bd0b74681c0ad21497610ce1b7c91b1022cd21c80c6fbdd9476b0"
 name = "bank_circuit"
 version = "0.1.0"
 dependencies = [
+ "ark-bls12-381 0.4.0",
  "ark-bn254 0.4.0",
  "ark-crypto-primitives 0.4.0",
  "ark-ec 0.4.2",
+ "ark-ed-on-bls12-381 0.4.0",
  "ark-ed-on-bn254 0.4.0",
  "ark-ff 0.4.2",
  "ark-groth16 0.4.0",
